@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Webpage Title -->
+    <title> 스파르타 몰 </title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <style type="text/css">
+        * {
+            font-family: 'Stylish', sans-serif;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .comment {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .form-post {
+            max-width: 500px;
+            padding: 2rem;
+            margin: 2rem auto;
+            border-color: #e9ecef;
+            border-radius: 0.3rem;
+            border: solid;
+            display: block;
+        }
+
+        .title {
+            height: 400px;
+            background-image: url('https://www1.djicdn.com/cms_uploads/ckeditor/pictures/1926/content_e444aceff4fe1829b1f057fe1cb85e7d.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-title {
+            font-size: 50px;
+            margin: 0 30px 0 0;
+        }
+
+        .order-title {
+            font-size: 50px;
+        }
+
+        .product-desc {
+            margin: 15px 0 50 0;
+            padding: 0 0 0 20px;
+            font-size: 20px;
+        }
+
+        .order-input {
+            width: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="jumbotron title">
+
+        </div>
+        <div>
+            <!-- <h1 class="display-4">나홀로 링크 메모장!</h1> -->
+            <p class="lead">
+                <label class="product-title">
+                    드론 판매합니다.
+                </label>
+                1,000 만원 / 개
+            </p>
+            <p class="product-desc">
+                M2E 스포트라이트 – 2400루멘 밝기의 듀얼 스포트라이트는 저조도 또는 어두운 환경에서 작업 수행을 돕는다. 수색과 구조활동을 위한 점검에 이상적인 액세서리다.
+                M2E 스피커 – 최대 100데시벨(1미터 거리)의 음량을 출력하는 확성기로 녹음된 음성 파일을 최대 10개까지 재생 가능하다. 드론을 주변 사람과 소통 장치로 사용할 수 있어 응급
+                상황에서 인명 구조 작업 시 중요한 역할을 한다.
+                M2E 비콘 – 미연방 항공국(FAA)의 야간 면제 기준을 충족하도록 설계된 M2E 비콘은 3마일 떨어진 곳에서도 보이는 밝은 섬광등을 갖췄다. 이에 저조도 환경에서도 안전한 임무 수행이
+                가능하며, 주변에 비행 중인 드론과 항공기에 매빅 2 엔터프라이즈의 위치를 인지시킬 수 있다.
+            </p>
+        </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주문자 성함 :</span>
+                </div>
+                <input type="text" class="form-control" id="staticEmail" placeholder="성함">
+            </div>
+        
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">수량 :</span>
+                    <select class="form-control order-input">
+                        <option value="" disabled selected>-- 수량을 선택 하세요. --</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주소 :</span>
+                </div>
+                <input type="text" class="form-control" id="staticEmail" placeholder="주소">
+            </div>
+        
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">전화번호 :</span>
+                </div>
+                <input type="text" class="form-control order-input" id="inputPassword" placeholder="전화번호">
+            </div>
+            
+            <button type="button" class="btn btn-primary" >주문하기</button>
+            
+
+    </div>
+
+  
+
+  
+
+</body>
+
+</html>

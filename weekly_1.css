@@ -1,0 +1,49 @@
+* {
+    font-family: 'Stylish', sans-serif;
+}
+
+.wrap {
+    width: 500px;
+    margin: auto;
+}
+
+.comment {
+    color: blue;
+    font-weight: bold;
+}
+
+.form-post {
+    max-width: 500px;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-color: #e9ecef;
+    border-radius: 0.3rem;
+    border: solid;
+    display: block;
+}
+
+.title {
+    height: 400px;
+    background-image: url('https://www1.djicdn.com/cms_uploads/ckeditor/pictures/1926/content_e444aceff4fe1829b1f057fe1cb85e7d.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.product-title {
+    font-size: 50px;
+    margin: 0 30px 0 0;
+}
+
+.order-title {
+    font-size: 50px;
+}
+
+.product-desc {
+    margin: 15px 0 50 0;
+    padding: 0 0 0 20px;
+    font-size: 20px;
+}
+
+.order-input {
+    width: 50%;
+}

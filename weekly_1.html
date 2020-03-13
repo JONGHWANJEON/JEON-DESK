@@ -26,58 +26,9 @@
     <!-- 구글폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
 
-    <!-- style -->
-    <style type="text/css">
-        * {
-            font-family: 'Stylish', sans-serif;
-        }
-
-        .wrap {
-            width: 500px;
-            margin: auto;
-        }
-
-        .comment {
-            color: blue;
-            font-weight: bold;
-        }
-
-        .form-post {
-            max-width: 500px;
-            padding: 2rem;
-            margin: 2rem auto;
-            border-color: #e9ecef;
-            border-radius: 0.3rem;
-            border: solid;
-            display: block;
-        }
-
-        .title {
-            height: 400px;
-            background-image: url('https://www1.djicdn.com/cms_uploads/ckeditor/pictures/1926/content_e444aceff4fe1829b1f057fe1cb85e7d.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .product-title {
-            font-size: 50px;
-            margin: 0 30px 0 0;
-        }
-
-        .order-title {
-            font-size: 50px;
-        }
-
-        .product-desc {
-            margin: 15px 0 50 0;
-            padding: 0 0 0 20px;
-            font-size: 20px;
-        }
-
-        .order-input {
-            width: 50%;
-        }
-    </style>
+    <!-- style은 새롭게 하나 만들어 봤습니다. -->
+   
+    <link rel = "stylesheet" type = "text/css" href = "weekly_1.css">
 
 </head>
 
@@ -87,7 +38,7 @@
 
         </div>
         <div>
-            <!-- <h1 class="display-4">나홀로 링크 메모장!</h1> -->
+            <!-- 복붙해서 쓰긴했는데 label은 명령어인가? 갑자기 왜 label 이 나왓나요.. -->
             <p class="lead">
                 <label class="product-title">
                     드론 판매합니다.
@@ -103,49 +54,52 @@
             </p>
         </div>
 
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">주문자 성함 :</span>
-                </div>
-                <input type="text" class="form-control" id="staticEmail" placeholder="성함">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자 성함 :</span>
             </div>
-        
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">수량 :</span>
-                    <select class="form-control order-input">
-                        <option value="" disabled selected>-- 수량을 선택 하세요. --</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
+            <input type="text" class="form-control" id="staticEmail" placeholder="성함">
+        </div>
+
+
+        <!-- input 길이가 수량부분만 달라요.. 왜이런거죠?ㅠ -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">수량 :</span>
+                <select class="form-control order-input">
+                    <option value="" disabled selected>-- 수량을 선택 하세요. --</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
             </div>
-        
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">주소 :</span>
-                </div>
-                <input type="text" class="form-control" id="staticEmail" placeholder="주소">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주소 :</span>
             </div>
-        
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">전화번호 :</span>
-                </div>
-                <input type="text" class="form-control order-input" id="inputPassword" placeholder="전화번호">
+            <input type="text" class="form-control" id="staticEmail" placeholder="주소">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">전화번호 :</span>
             </div>
-            
-            <button type="button" class="btn btn-primary" >주문하기</button>
-            
+            <input type="text" class="form-control order-input" id="inputPassword" placeholder="전화번호">
+        </div>
+
+        <button type="button" class="btn btn-primary">주문하기</button>
 
     </div>
 
-  
 
-  
+
+    <!-- 밑에 여백을 어떻게 더 줄 수 있나요? -->
+<p>
+</p>
 
 </body>
 
